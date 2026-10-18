@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "required files",
+    "entry links",
+    "JS syntax",
+    "game1 hashes"
+  ],
+  "gameFiles": [
+    {
+      "file": "index.html",
+      "sha256": "13d89e378a5f0c7bdc2ae02e3102b778e988c4ce2d080bfa7e95e0729f2c7666"
+    },
+    {
+      "file": "style.css",
+      "sha256": "e8f2d897f799ec55bc5a95e609e3b9b920f985207348fe77729ba7220985221f"
+    },
+    {
+      "file": "game.js",
+      "sha256": "6455a214bc1a066c803fb8254cf40add1031560184905de9f556325c361d2e6c"
+    },
+    {
+      "file": "story.js",
+      "sha256": "b94b7df22116049b5987ace253d669afe8a1178f5482f9263d605a7245c28dcd"
+    }
+  ],
+  "limits": "Preparation only; no new gameplay or browser/touch verification."
+}

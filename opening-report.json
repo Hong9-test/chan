@@ -1,0 +1,19 @@
+{
+  "v1Migration": true,
+  "report": [
+    {
+      "viewport": "1180x850",
+      "fourBubbles": true,
+      "noReplayOnReload": true,
+      "choiceStillWorks": true,
+      "errors": []
+    },
+    {
+      "viewport": "390x844",
+      "fourBubbles": true,
+      "noReplayOnReload": true,
+      "choiceStillWorks": true,
+      "errors": []
+    }
+  ]
+}

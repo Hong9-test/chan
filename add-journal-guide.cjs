@@ -1,0 +1,10 @@
+const fs=require('fs'),p='outputs/school-escape/first-room.js';let s=fs.readFileSync(p,'utf8');
+function edit(a,b){if(!s.includes(a))throw Error('missing '+a.slice(0,60));s=s.replaceAll(a,b);}
+edit("function refresh(){if(progress.area", "function refresh(){const clueCount=['paper','chart'].filter(id=>progress.seen.includes(id)).length;$('journal').classList.toggle('journal-ready',progress.area==='classroom'&&!progress.decoded&&clueCount===2);if(progress.area");
+edit(":'쪽지와 암호표를 함께 살펴보자'", ":clueCount===2?'단서 2개를 모았다 · 수첩을 열어 곱셈 암호를 풀자':clueCount===1?'수첩에 단서 1개 · 쪽지와 암호표를 모두 찾아보자':'쪽지와 암호표를 찾아 수첩에 모으자'");
+edit("[['손전등으로 교실을 조사한다',close]]);}", "[['손전등으로 교실을 조사한다',close]]);$('content').innerHTML='<div class=\"story-card journal-guide\"><b>단서 수첩 사용하기</b><p>① 교실에서 쪽지와 암호표를 찾으면 수첩에 모여요.<br>② 화면 위의 <b>수첩</b>을 열고 <b>곱셈 암호 맞추기</b>를 눌러요.<br>③ 암호를 풀면 다음에 조사할 곳을 알 수 있어요.</p><small>단서는 언제든 수첩에서 다시 볼 수 있어요.</small></div>';}");
+// Keep existing button names, but explain what to do once it closes.
+edit("[['수첩에 넣고 돌아간다',close]", "[['수첩에 넣고 돌아간다',storeClassClue]");
+edit("show('단서 수첩','발견한 근거를 함께 보고 생각해 보자.'", "show('단서 수첩',E.ready(progress,'cipher')&&!progress.decoded?'쪽지와 암호표를 모두 찾았다. 아래 ‘곱셈 암호 맞추기’를 눌러 숨겨진 장소를 알아내자.':!progress.decoded?'쪽지와 암호표가 모두 있어야 암호를 풀 수 있다. 수첩에 없는 단서를 교실에서 찾아보자.':'찾은 단서와 알아낸 장소를 다시 확인해 보자.'");
+s+="\nfunction storeClassClue(){close();toast(E.ready(progress,'cipher')&&!progress.decoded?'단서 두 개를 모았어요. 화면 위 수첩을 열어 곱셈 암호를 풀어 보세요.':'단서를 수첩에 넣었어요. 쪽지와 암호표를 모두 찾아보세요.');}\n";
+fs.writeFileSync(p,s);const h='outputs/school-escape/index.html';fs.writeFileSync(h,fs.readFileSync(h,'utf8').replace('first-room.js?v=locks1','first-room.js?v=journal1').replace('first-room.css?v=library-progress1','first-room.css?v=journal1'));fs.appendFileSync('outputs/school-escape/first-room.css','\n#journal.journal-ready{border:2px solid #e8cf85;background:#48695b;color:#fff7d6;box-shadow:0 0 0 3px #e8cf8526}.journal-guide p{margin:8px 0;line-height:1.9}.journal-guide small{font-size:12px}\n');

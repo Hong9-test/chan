@@ -1,0 +1,14 @@
+[
+  {
+    "route": "spirit",
+    "complete": true,
+    "reload": true,
+    "errors": []
+  },
+  {
+    "route": "light",
+    "complete": true,
+    "reload": true,
+    "errors": []
+  }
+]

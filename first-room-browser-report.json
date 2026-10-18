@@ -1,0 +1,22 @@
+[
+  {
+    "route": "voice",
+    "viewport": "1180x850",
+    "twoClueCipher": true,
+    "wrongAndReload": true,
+    "doorWordProblem": true,
+    "oldKeysIntact": true,
+    "backupRestore": true,
+    "errors": []
+  },
+  {
+    "route": "quiet",
+    "viewport": "390x844",
+    "twoClueCipher": true,
+    "wrongAndReload": true,
+    "doorWordProblem": true,
+    "oldKeysIntact": true,
+    "backupRestore": true,
+    "errors": []
+  }
+]

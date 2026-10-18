@@ -1,0 +1,18 @@
+[
+  {
+    "area": "classroom",
+    "v3ExistingSaveShowsOpening": true,
+    "progressRetained": true,
+    "oneTimeAndReplay": true,
+    "friendSupport": false,
+    "errors": []
+  },
+  {
+    "area": "science",
+    "v3ExistingSaveShowsOpening": true,
+    "progressRetained": true,
+    "oneTimeAndReplay": true,
+    "friendSupport": true,
+    "errors": []
+  }
+]

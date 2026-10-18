@@ -1,0 +1,24 @@
+[
+  {
+    "mobile": false,
+    "scienceClues": true,
+    "wrongLayoutBlocked": true,
+    "reload": true,
+    "fiveCharacters": true,
+    "realityReturn": true,
+    "roundTrip": true,
+    "backupRestore": true,
+    "errors": []
+  },
+  {
+    "mobile": true,
+    "scienceClues": true,
+    "wrongLayoutBlocked": true,
+    "reload": true,
+    "fiveCharacters": true,
+    "realityReturn": true,
+    "roundTrip": true,
+    "backupRestore": true,
+    "errors": []
+  }
+]
